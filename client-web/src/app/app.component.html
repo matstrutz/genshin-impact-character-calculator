@@ -1,13 +1,28 @@
-<div class="header">
+<div class="header box-shadow">
 
 </div>
 <div class="background">
-  <div class="t-color margin-botton-10">Character Selector</div>
-  <label class="t-color">Character</label>
-  <select [(ngModel)]="selectedChar">
-    <option *ngFor="let char of characterList" [(ngValue)]="char.value">{{char.label}}</option>
-  </select>
-
-  <p class="t-color">Selected Character: {{selectedChar}}</p>
-
+  <div class="menu-bar">
+    <div class="char-card">
+      <div class="t-color pad-20 marg-10 char-title ">Character Selector</div>
+      <div class="char-image-card marg-10-important">
+        <p style="color: white;">Selected Character: {{selectedChar}}</p>
+      </div>
+      <div class="marg-10-important">
+        <select [(ngModel)]="selectedChar">
+          <option class="option-back-color" *ngFor="let char of characterList" [(ngValue)]="char.value">{{char.label}}</option>
+        </select>
+      </div>
+      <div class="marg-10-important">
+        <select [(ngModel)]="selectedLevelBase">
+          <option class="option-back-color" *ngFor="let level of levelBaseList" [(ngValue)]="level.value">{{level.label}}</option>
+        </select>
+      </div>
+      <div>
+        <select [(ngModel)]="selectedLevelToGo">
+          <option class="option-back-color" *ngFor="let level of levelToGoList" [(ngValue)]="level.value">{{level.label}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
 </div>

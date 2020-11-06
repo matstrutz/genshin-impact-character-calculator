@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from './models/select-item.model';
+import { CharacterList } from './shared/select-items.component';
 
 @Component({
   selector: 'app-root',
@@ -7,18 +8,17 @@ import { SelectItem } from './models/select-item.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  selectedChar: string;
+  selectedChar: string = 'amber';
+  selectedLevelBase: string = '1';
+  selectedLevelToGo: string = '90';
 
-  characterList: SelectItem[] = [
-    {value: 'amber', label: 'Amber'},
-    {value: 'diluc', label: 'Diluc'},
-    {value: 'fisch', label: 'Fisch'}
-  ];
+  characterList: SelectItem[] = CharacterList.characterList;
+  levelBaseList: SelectItem[] = CharacterList.levelBase;
+  levelToGoList: SelectItem[] = CharacterList.levelToGo;
 
   constructor() { };
 
   ngOnInit() { 
-    console.log(this.characterList);
   };
 
 }

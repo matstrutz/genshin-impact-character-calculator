@@ -1,24 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap');
+
 .background {
-    height: 100vh;
-    background: linear-gradient(to bottom, rgb(191, 191, 191), rgb(177,177,177));
+    height: 94vh;
+    background: linear-gradient(to bottom, rgb(230, 230, 230), rgb(219, 219, 219));
     background-size: cover;
 }
 
 .t-color {
-    color: rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
+}
+
+.pad-20 {
+    padding-top: 20px;
+}
+
+.marg-10 {
+    margin-bottom: 10px;
+}
+
+.marg-10-important {
+    margin-bottom: 10px !important;
 }
 
 .header {
     width: 100%;
-    height: 60px;
-    background: #747474;
+    height: 6vh;
+    background: #2e2e2e;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
     top: 0;
     margin: 0;
+}
+
+.menu-bar {
+    height: 94vh;
+    width: 50vh;
+    // background-color: #39b149;
+    background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(209, 209, 209));
+    border-right: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px 2px #1b1b1b;
+}
+
+.char-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Grandstander', sans-serif
+}
+
+.select-conf {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-shadow {
+    position:sticky;
+    box-shadow: 0px 0px 8px 2px #000000;
+}
+
+.char-card {
+    height: 35vh;
+    width: 50vh;
+    // background-color: #ffffff;
+}
+
+.char-image-card {
+    height: 15vh;
+    width: 15vh;
+    margin: auto;
+    padding: 10px;
+    background-color: #000000;
+}
+
+select {
+    width: 150px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+    font-family: Arial;
+    text-align-last: center;
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    -o-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select:focus {
+    outline-width: 0;
+}
+
+select option {
+    margin: 40px;
+    background: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
