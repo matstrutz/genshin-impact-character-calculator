@@ -21,7 +21,6 @@ export class CharacterList {
         { value: 'qiqi', label: 'Qiqi' },
         { value: 'razor', label: 'Razor' },
         { value: 'sucrose', label: 'Sucrose' },
-        { value: 'sucrose', label: 'Sucrose' },
         { value: 'tartaglia', label: 'Tartaglia' },
         { value: 'venti', label: 'Venti' },
         { value: 'xiangling', label: 'Xiangling' },
