@@ -6,19 +6,28 @@
     <div class="char-card">
       <div class="t-color pad-20 marg-10 char-title ">Character Selector</div>
       <div class="char-image-card marg-10-important">
-        <p style="color: white;">Selected Character: {{selectedChar}}</p>
+        <img [src]="selectedChar.imageUrl" alt="">
       </div>
-      <div class="marg-10-important">
-        <select [(ngModel)]="selectedChar">
+      <div class="half-right marg-top-20-important marg-10-important"> 
+        <p class="text-center aldritch-font">Select Character: </p>
+      </div>
+      <div class="half-left marg-top-20-important marg-10-important">
+        <select [(ngModel)]="selectedChar.nameId">
           <option class="option-back-color" *ngFor="let char of characterList" [(ngValue)]="char.value">{{char.label}}</option>
         </select>
       </div>
-      <div class="marg-10-important">
+      <div class="half-right marg-10-important"> 
+        <p class="text-center aldritch-font">Current Level: </p>
+      </div>
+      <div class="half-left marg-10-important">
         <select [(ngModel)]="selectedLevelBase">
           <option class="option-back-color" *ngFor="let level of levelBaseList" [(ngValue)]="level.value">{{level.label}}</option>
         </select>
       </div>
-      <div>
+      <div class="half-right marg-10-important"> 
+        <p class="text-center aldritch-font">Level To Upgrade: </p>
+      </div>
+      <div class="half-left marg-10-important">
         <select [(ngModel)]="selectedLevelToGo">
           <option class="option-back-color" *ngFor="let level of levelToGoList" [(ngValue)]="level.value">{{level.label}}</option>
         </select>

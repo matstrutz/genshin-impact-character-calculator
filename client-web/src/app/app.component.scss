@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+
 
 .background {
     height: 94vh;
@@ -20,6 +22,21 @@
 
 .marg-10-important {
     margin-bottom: 10px !important;
+}
+
+.marg-top-20-important {
+    margin-top: 20px !important;
+}
+
+.half-right {
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+.half-left {
+    width: 50%;
+    display: inline-block;
 }
 
 .header {
@@ -66,15 +83,22 @@
 .char-card {
     height: 35vh;
     width: 50vh;
-    // background-color: #ffffff;
+}
+
+.margin-remove {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .char-image-card {
-    height: 15vh;
-    width: 15vh;
+    height: 20vh;
+    width: 16vh;
     margin: auto;
     padding: 10px;
-    background-color: #000000;
 }
 
 select {
@@ -93,6 +117,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    font-family: 'Aldrich';font-size: 18px;
 }
 
 select:focus {
@@ -104,4 +129,19 @@ select option {
     background: rgb(230, 230, 230);
     color: rgb(0, 0, 0);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-family: 'Aldrich';font-size: 18px;
+}
+
+.text-center {
+    display: block;
+    margin: 0 auto;
+    text-align-last: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.aldritch-font {
+    font-family: 'Aldrich';font-size: 18px;
 }
