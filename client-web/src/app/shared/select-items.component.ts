@@ -4,7 +4,6 @@ export class CharacterList {
     static characterList: SelectItem[] = [
         { value: 'amber', label: 'Amber' },
         { value: 'barbara', label: 'Barbara' },
-        { value: 'barbara', label: 'Barbara' },
         { value: 'beidou', label: 'Beidou' },
         { value: 'bennett', label: 'Bennett' },
         { value: 'chongyun', label: 'Chongyun' },
