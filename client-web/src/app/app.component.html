@@ -8,12 +8,15 @@
       <div class="char-image-card marg-10-important">
         <img [src]="selectedChar.imageUrl" alt="">
       </div>
+      <div class="vision-image-card">
+        <img [src]="selectedChar.vision" alt="">
+      </div>
       <div class="half-right marg-top-20-important marg-10-important"> 
         <p class="text-center aldritch-font height-25">Select Character: </p>
       </div>
       <div class="half-left marg-top-20-important marg-10-important">
-        <select [(ngModel)]="selectedChar.nameId">
-          <option class="option-back-color" *ngFor="let char of characterList" [(ngValue)]="char.value">{{char.label}}</option>
+        <select [(ngModel)]="selectedChar">
+          <option class="option-back-color" *ngFor="let char of characterList" [ngValue]="char">{{char.name}}</option>
         </select>
       </div>
       <div class="half-right marg-10-important"> 

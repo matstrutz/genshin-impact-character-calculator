@@ -13,15 +13,17 @@ export class AppComponent implements OnInit {
   selectedLevelBase: string = '1';
   selectedLevelToGo: string = '90';
 
-  selectedChar: Character = CharacterModels.amber;
+  selectedChar: Character;
 
-  characterList: SelectItem[] = CharacterList.characterList;
+  // characterList: SelectItem[] = CharacterList.characterList;
   levelBaseList: SelectItem[] = CharacterList.levelBase;
   levelToGoList: SelectItem[] = CharacterList.levelToGo;
+  characterList: Character[] = CharacterModels.charList;
 
   constructor() { };
 
   ngOnInit() { 
+    this.selectedChar = CharacterModels.amber;
   };
 
 }
