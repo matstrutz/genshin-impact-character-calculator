@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
 
   selectedChar: Character;
 
-  // characterList: SelectItem[] = CharacterList.characterList;
   levelBaseList: SelectItem[] = CharacterList.levelBase;
   levelToGoList: SelectItem[] = CharacterList.levelToGo;
   characterList: Character[] = CharacterModels.charList;

@@ -56,10 +56,10 @@
 .menu-bar {
     height: 94vh;
     width: 50vh;
-    // background-color: #39b149;
     background: linear-gradient(to bottom, rgb(220, 220, 220), rgb(209, 209, 209));
     border-right: 1px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 6px 2px #1b1b1b;
+    float: left;
 }
 
 .char-title {
@@ -145,7 +145,6 @@ select option {
     display: flex;
     justify-content: center;
     align-items: center;
-    // border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .aldritch-font {
@@ -158,4 +157,14 @@ select option {
 
 .align-left {
     text-align-last: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.item-box {
+    width: 7vh;
+    height: 7vh;
+    background: blue;
 }
