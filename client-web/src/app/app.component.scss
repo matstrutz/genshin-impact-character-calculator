@@ -163,8 +163,22 @@ select option {
     float: left;
 }
 
+.box-shadow-thin {
+    position:sticky;
+    box-shadow: 0px 0px 6px 4px #000000;
+}
+
 .item-box {
     width: 7vh;
     height: 7vh;
-    background: blue;
+    background: transparent;
+
+}
+
+.item-menu-center {
+    height: 25vh;
+    background: green;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
 }
