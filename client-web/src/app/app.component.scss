@@ -165,20 +165,38 @@ select option {
 
 .box-shadow-thin {
     position:sticky;
-    box-shadow: 0px 0px 6px 4px #000000;
+    box-shadow: -2px 5px 8px 1px #000000;
+    border: 1px solid  #000000;
 }
 
 .item-box {
-    width: 7vh;
-    height: 7vh;
+    width: 8vh;
+    height: 8vh;
     background: transparent;
+    margin: 3%;
+}
 
+.price-box {
+    width: 8vh;
+    height: 3vh;
+    background: transparent;
+    margin-top: 10vh;
 }
 
 .item-menu-center {
-    height: 25vh;
-    background: green;
+    display: flex;
+    justify-content: center;
+    height: 200px;
     margin-left: 10%;
-    margin-right: 10%;
     margin-top: 10%;
+}
+
+.display-content {
+    display: contents;
+}
+
+.box-title {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
 }
