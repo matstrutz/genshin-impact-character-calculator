@@ -173,7 +173,7 @@ select option {
     width: 8vh;
     height: 8vh;
     background: transparent;
-    margin: 3%;
+    margin: 15px;
 }
 
 .price-box {
@@ -187,8 +187,8 @@ select option {
     display: flex;
     justify-content: center;
     height: 200px;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: 15%;
+    margin-top: 1%;
 }
 
 .display-content {
@@ -198,5 +198,25 @@ select option {
 .box-title {
     display: flex;
     align-items: center;
-    margin-right: 2%;
+}
+
+.item-menu-talent-center {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-left: 15%;
+}
+
+.item-sub-menu-center {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-left: 25%;
+}
+
+.item-sub-menu-talent-center {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-left: 28%;
 }

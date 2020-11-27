@@ -10,6 +10,7 @@ import { CharacterList } from './shared/select-items.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  moraUrl: string = "assets/itens/Icon_Mora.png";
   selectedLevelBase: string = '1';
   selectedLevelToGo: string = '90';
 
